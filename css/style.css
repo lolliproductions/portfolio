@@ -484,16 +484,43 @@ textarea {
   background: #ffffff;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none;
   border: 2px solid #c46b46;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown),
+textarea:invalid:not(:focus):not(:placeholder-shown) {
+               background-color: #E6B2A6;
+                border: 2px solid #C75A4A;
+                animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            }
+
+
+/* adresse mail invalide */
+@keyframes headshake {
+    25% {
+        /* entièrement à droite */
+        transform: translateX(1%);
+    }
+    75% {
+        /* entièrement à gauche */
+        transform: translateX(1% * -1);
+    }
+}
+
+.error-msg {
+  color: #C75A4A; /* ton rouge terre cuite */
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: none; /* caché par défaut */
 }
 
 .btn-primary {
   font-family: "Outfit", sans-serif;
   position: relative;
   padding: 14px 32px;
-  background: #C46B46;           /* ta couleur actuelle */
+  background: #C46B46;           
   color: #fff;
   border: none;
   border-radius: 999px;

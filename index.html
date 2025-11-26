@@ -222,18 +222,18 @@
         </p>
       </div>
 
-      <form class="contact-form">
+      <form action="https://formspree.io/f/xblvrlzq" method="POST" class="contact-form">
         <div class="form-group">
           <label for="name">Nom / Prénom</label>
-          <input type="text" id="name" placeholder="Votre nom" required>
+          <input name="name" type="text" id="name" placeholder="Votre nom" required>
         </div>
         <div class="form-group">
           <label for="email">Adresse e-mail</label>
-          <input type="email" id="email" placeholder="vous@exemple.com" required>
+          <input name="email" type="email" id="email" placeholder="vous@exemple.com" required>
         </div>
         <div class="form-group">
           <label for="project">Votre projet</label>
-          <textarea id="project" rows="5" placeholder="Parlez-moi de votre activité et de vos besoins..."></textarea>
+          <textarea name="message" id="project" rows="5" placeholder="Parlez-moi de votre activité et de vos besoins..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary full-width">Envoyer</button>
       </form>
