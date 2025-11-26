@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Web Design - Lauriane Sannier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Outfit&display=swap" rel="stylesheet">
+</head>
+
+<!-- Rajouter des keyframes au formulaire (quand adresse erronnée etc.) -->
+
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        Lauriane Sannier <span>Web Design</span></div>
+      <nav class="main-nav">
+        <a href="#hero">Accueil</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-tagline">Web designer & intégratrice front-end</p>
+        <h1>Je conçois des sites web modernes, lisibles et sur-mesure.</h1>
+        <p class="hero-subtitle">
+          J’aide les freelances et petites entreprises à avoir une présence en ligne
+          claire, esthétique et facile à utiliser.
+        </p>
+        <div class="hero-ctas">
+          <a href="#portfolio" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+        <div class="hero-highlights">
+          <span>Design sur mesure</span>
+          <span>Responsive</span>
+          <span>UX claire</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-title">Disponibilité</p>
+        <p class="hero-card-text">
+          Ouverte aux projets vitrines, refontes et identités visuelles.
+        </p>
+        <p class="hero-card-note">📍 Basée dans le Var, en France</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Portfolio</h2>
+        <p>Une sélection de projets en web design et intégration front-end.</p>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter active">Tous</button>
+        <button class="filter">Web design</button>
+        <button class="filter">Intégration</button>
+        <button class="filter">WordPress</button>
+        <button class="filter">Projets perso</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+         <!-- Projet 1 -->
+        <article class="project-card">
+          <p class="project-tag">WordPress</p>
+          <div class="container-logo"><img src="images/logo_paroisse_saint_jacques.png" class="img_logo" alt="logo Paroisse Saint-Jacques"></div>
+          <p class="project-desc">
+            Refonte du site de la Paroisse de Saint-Jacques-sur-Darnétal appartenant au Diocèse de Rouen.
+          </p>
+          <a href="https://rouen.catholique.fr/saint-jacques-de-saint-jacques-sur-darnetal/" target="_blank" class="project-link">Voir le projet</a>
+        </article>
+       <!-- Projet 2 -->
+        <article class="project-card">
+          <p class="project-tag">Site fictif • HTML/CSS/JS</p>
+          <div class="container-logo"><img src="images/logo_aurea_spa.png" class="img_logo" alt="logo Aurea Spa"></div>
+          <p class="project-desc">
+            Landing page élégante pour un spa premium : palette bleu & or,
+            typographie raffinée, mise en avant des services et prise de rendez-vous.
+          </p>
+          <ul class="project-meta">
+            <li>Objectif : renforcer l’image haut de gamme</li>
+            <li>Rôle : design + intégration HTML/CSS</li>
+          </ul>
+          <a href="https://lolliproductions.github.io/Aurea-Spa/" target="_blank" class="project-link">Voir le projet</a>
+        </article>
+        <!-- Projet 3 -->
+        <article class="project-card">
+          <p class="project-tag">Site fictif • HTML/CSS</p>
+          <div class="container-logo"><img src="images/logo_pearl_lab.png" class="img_logo" alt="logo Pearl Lab"></div>
+          <p class="project-desc">
+            Bar situé en plein centre de Paris, proposant des bubbles teas dans un univers futuriste et expérimental.
+          </p>
+          <a href="https://lolliproductions.github.io/PearlLab/" target="_blank" class="project-link">Voir le projet</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="services_title">Services</h2>
+        <p>Des prestations adaptées aux freelances et petites structures.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Site vitrine WordPress</h3>
+          <p>
+            Installation, personnalisation du thème, création des pages essentielles
+            (Accueil, À propos, Services, Contact), responsive et prêt à l’emploi.
+          </p>
+          <ul>
+            <li>Conseil sur la structure du site</li>
+            <li>Design cohérent avec votre identité</li>
+            <li>Prise en main de base pour les mises à jour</li>
+          </ul>
+          <p><span class="price_color">À partir de 850€</span></p>
+        </article>
+
+        <article class="service-card">
+          <h3>Site codé sur mesure</h3>
+          <p>
+            Développement HTML/CSS (et JavaScript si besoin) pour un site léger,
+            rapide et entièrement personnalisé.
+          </p>
+          <ul>
+            <li>Maquette sur mesure</li>
+            <li>Code propre et maintenable</li>
+            <li>Performance et accessibilité</li>
+          </ul>
+          <p><span class="price_color">Sur devis</span></p>
+        </article>
+
+        <article class="service-card">
+          <h3>Identité visuelle</h3>
+          <p>
+            Création de base graphique pour votre activité : logo simple,
+            palette de couleurs, typographies et mini-charte.
+          </p>
+          <ul>
+            <li>Logo simple & lisible</li>
+            <li>Palette cohérente et flexible</li>
+            <li>Guide d’utilisation</li>
+          </ul>
+          <p><span class="price_color">À partir de 300€</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div>
+        <div class="section-heading align-left">
+          <h2 class="about_title">À propos</h2>
+          <p>Une approche calme, structurée et orientée expérience utilisateur.</p>
+        </div>
+        <p>
+          Je m’appelle Lauriane et je me spécialise en web design et intégration
+          front-end. J’aime créer des interfaces simples, claires et rassurantes,
+          avec une attention particulière à la typographie, à la hiérarchie de
+          l’information et au confort de lecture.
+        </p>
+        <p>
+          Mon objectif : transformer des idées parfois floues en sites web concrets,
+          modernes et faciles à utiliser, autant pour vous que pour vos visiteurs.
+        </p>
+
+        <div class="about-values">
+          <div class="pill">Écoute & pédagogie</div>
+          <div class="pill">Design minimaliste</div>
+          <div class="pill">Code propre</div>
+        </div>
+      </div>
+      <aside class="about-side">
+        <h3>Ma façon de travailler</h3>
+        <ul class="checklist">
+          <li>Un brief clair avant de commencer</li>
+          <li>Des maquettes validées avant intégration</li>
+          <li>Des explications simples, sans jargon inutile</li>
+          <li>Un site pensé pour durer, pas pour impressionner 5 minutes</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div>
+        <div class="section-heading align-left">
+          <h2 class="contact_title">Contact</h2>
+          <p>Parlons de votre projet.</p>
+        </div>
+        <p class="contact_text">
+          Vous avez une idée de site, une refonte en tête, ou juste besoin d’y voir
+          plus clair ? Écrivez-moi avec quelques détails et je vous répondrai
+          rapidement avec des premières pistes.
+        </p>
+        <p class="contact-info">
+          Email : <a href="mailto:laurianesannier@gmail.com">laurianesannier@gmail.com</a>
+        </p>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Nom / Prénom</label>
+          <input type="text" id="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" placeholder="vous@exemple.com" required>
+        </div>
+        <div class="form-group">
+          <label for="project">Votre projet</label>
+          <textarea id="project" rows="5" placeholder="Parlez-moi de votre activité et de vos besoins..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Lauriane Sannier Web Design. Tous droits réservés.</p>
+      <p class="footer-small">Portfolio réalisé en HTML & CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>
