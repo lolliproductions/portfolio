@@ -322,12 +322,32 @@ h1, h2 {
 }
 
 .project-link {
+  position: relative;
   margin-top: auto;
   align-self: flex-start;
   font-size: 0.9rem;
   text-decoration: none;
   color: var(--primary);
+  padding-bottom: 2px; /* petit espace pour la barre */
 }
+
+/* La barre (invisible au début) */
+.project-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0%;
+  height: 1.5px; /* épaisseur de la barre */
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+/* Animation au hover : barre qui s'étire de gauche à droite */
+.project-link:hover::after {
+  width: 100%;
+}
+
 
 /* SERVICES */
 
@@ -337,7 +357,7 @@ h1, h2 {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -452,8 +472,27 @@ h1, h2 {
 }
 
 .contact-info a {
+  position: relative;
   color: var(--primary);
   text-decoration: none;
+  padding-bottom: 2px; /* espace pour la barre */
+}
+
+/* Barre invisible au départ */
+.contact-info a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--primary);
+  transition: width 0.3s ease;
+}
+
+/* Barre qui se déploie au hover */
+.contact-info a:hover::after {
+  width: 100%;
 }
 
 .contact-form {
@@ -531,12 +570,12 @@ textarea:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 /* Petit état au survol */
-.btn-primary:hover {
+.full-width:hover {
   filter: brightness(1.05);
 }
 
 /* Pseudo-élément = barre de chargement */
-.btn-primary::before {
+.full-width::before {
   content: "";
   position: absolute;
   inset: 0;                      /* top/right/bottom/left: 0 */
@@ -548,8 +587,8 @@ textarea:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 /* Lancer l'anim au hover ou focus clavier */
-.btn-primary:hover::before,
-.btn-primary:focus-visible::before {
+.full-width:hover::before,
+.full-width:focus-visible::before {
   animation: loadingBar 0.7s forwards ease-in-out;
 }
 
