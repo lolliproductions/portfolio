@@ -99,6 +99,12 @@ h1, h2 {
   font-size: 0.95rem;
 }
 
+@media (max-width: 500px) {
+  .main-nav {
+    padding-top: 20px;
+  }
+}
+
 .main-nav a {
   text-decoration: none;
   color: var(--text-muted);
