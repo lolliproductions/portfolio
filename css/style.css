@@ -61,7 +61,6 @@ h1, h2 {
 
 .section-heading p {
   margin: 0;
-  color: var(--text-muted);
 }
 
 /* HEADER */
@@ -146,7 +145,7 @@ h1, h2 {
 
 .hero-subtitle {
   margin: 0 0 20px;
-  color: var(--text-muted);
+  color: #e5e7eb;
   max-width: 520px;
 }
 
@@ -240,6 +239,11 @@ h1, h2 {
 }
 
 /* PORTFOLIO */
+
+.portfolio_subtitle {
+  color: #e5e7eb;
+}
+
 .portfolio-filters {
   display: flex;
   flex-wrap: wrap;
@@ -361,6 +365,10 @@ h1, h2 {
   color: #0f3d2e;
 }
 
+.services_subtitle {
+  color: #6b7280;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -421,6 +429,10 @@ h1, h2 {
   color: #efe8da;
 }
 
+.about_text {
+  color: #e5e7eb;
+}
+
 .pill {
   padding: 6px 12px;
   border-radius: var(--radius-pill);
@@ -459,6 +471,10 @@ h1, h2 {
 
 .contact_title {
   color: #0f3d2e;
+}
+
+.contact_subtitle {
+  color: #6b7280;
 }
 
 .contact-grid {
